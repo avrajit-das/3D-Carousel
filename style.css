@@ -73,6 +73,8 @@ body {
     -webkit-transform: translate(-50%, -50%) rotateX(90deg);
     transform: translate(-50%, -50%) rotateX(90deg);
     color: #fff;
+    opacity: 0;
+    animation: fade 4s ease-in forwards;
 }
 
 #ground {
@@ -92,7 +94,17 @@ body {
     left: 0;
 }
 
-@-webkit-keyframes spin {
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
     from {
         -webkit-transform: rotateY(0deg);
         transform: rotateY(0deg);
@@ -116,7 +128,7 @@ body {
     }
 }
 
-@-webkit-keyframes spinRevert {
+@keyframes spinRevert {
     from {
         -webkit-transform: rotateY(360deg);
         transform: rotateY(360deg);

@@ -61,6 +61,9 @@ body {
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
     -webkit-box-shadow: 0 0 15px #fffd;
     box-shadow: 0 0 15px #fffd;
+    aspect-ratio: 12/17;
+    object-fit: cover;
+    object-position: center;
 }
 
 #drag-container p {
